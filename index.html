@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="title" content="" />
+  <meta name="keywords"
+    content="free books, books to read, free ebooks, audio books, read books for free, read books online, online library">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="author" content="OpenLibrary.org" />
+  <meta name="creator" content="OpenLibrary.org" />
+  <meta name="copyright" content="Original content copyright; 2007-2015" />
+  <meta name="distribution" content="Global" />
+  <meta name="theme-color" content="#e2dcc5"> -->
+
+
+  <link rel="canonical" href="https://openlibrary.org/" />
+  <link rel="preconnect" href="https://analytics.archive.org">
+
+  <link rel="search" type="application/opensearchdescription+xml" title="Open Library" href="/static/opensearch.xml">
+  <link rel="manifest" href="/static/manifest.json">
+
+  <!-- <link href="/static/images/openlibrary-128x128.png" rel="apple-touch-icon" />
+  <link href="/static/images/openlibrary-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+  <link href="/static/images/openlibrary-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+  <link href="/static/images/openlibrary-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+  <link href="/static/images/openlibrary-192x192.png" rel="icon" sizes="192x192" />
+  <link href="/static/images/openlibrary-128x128.png" rel="icon" sizes="128x128" /> -->
+  <link href="page-home.css" rel="stylesheet" type="text/css" />
+
+  <noscript>
+    <style>
+      /* Don't hide content with clamp if no js to show more/less */
+      .clamp {
+        -webkit-line-clamp: unset !important;
+      }
+
+      /* @width-breakpoint-tablet media query: */
+      @media only screen and (min-width: 768px) {
+
+        /* Sticky navbar to top of screen if compact title cannot be stickied */
+        .work-menu {
+          top: 0 !important;
+        }
+      }
+    </style>
+  </noscript>
+  <script>
+
+  </script>
+
+<!--  
+  <script type="text/javascript">window.q = [];</script>
+  <meta name="google-site-verification" content="KrqcZD4l5BLNVyjzSi2sjZBiwgmkJ1W7n6w7ThD7A74" />
+  <meta name="google-site-verification" content="vtXGm8q3UgP-f6qXTvQBo85uh3nmIYIotVqqdJDpyz4" />
+  <meta name="alexaVerifyID" content="wJKlTRj1Z1OI4G-J0w9R-cWhJjw" />
+
+  <meta name="google-site-verification" content="XYOJ9Uj0MBr6wk7kj1IkttXrqY-bbRstFMADTfEt354" /> -->
+
+  <meta name="description"
+    content="Open Library is an open, editable library catalog, building towards a web page for every book ever published. Read, borrow, and discover more than 3M books for free." />
+
+  <title>Welcome to Open Library | Open Library</title>
+
+</head>
+
+
+
+
+<body class="">
+  <script>
+    // Provide a signal that JS will load
+    document.body.className += ' client-js';
+  </script>
+  <span id="top"></span>
+  <div id="offline-info">It looks like you&#39;re offline.</div>
+  <div id="donato"></div>
+  <script src="/cdn/archive.org/donate.js" data-platform="ol"></script>
+
+
+  <div id="topNotice">
+    <div class="page-banner page-banner-black page-banner-center">
+      <div class="iaBar">
+        <a class="iaLogo" href="https://archive.org"><img alt="Internet Archive logo" src="static/images/ia-logo.svg"
+            width="160"></a>
+        <a class="ghost-btn" href="https://archive.org/donate/?platform=ol&origin=olwww-TopNavDonateButton"
+          data-ol-link-track="IABar|DonateButton">Donate <span class="heart" aria-hidden="true">♥</span></a>
+        <div class="language-component header-dropdown" id="footer-locale-menu">
+          <details>
+            <summary>
+              <img class="translate-icon" src="static/images/language-icon.svg" title="Change Website Language"
+                alt="Change Website Language" />
+            </summary>
+            <div class="language-dropdown-component">
+
+              <ul class="locale-options dropdown-menu">
+                <li><a href="#" lang="cs" data-lang-id="cs" title="Czech">Čeština (cs)</a></li>
+                <li><a href="#" lang="de" data-lang-id="de" title="German">Deutsch (de)</a></li>
+                <li><a href="#" lang="en" data-lang-id="en" title="English">English (en)</a></li>
+                <li><a href="#" lang="es" data-lang-id="es" title="Spanish">Español (es)</a></li>
+                <li><a href="#" lang="fr" data-lang-id="fr" title="French">Français (fr)</a></li>
+                <li><a href="#" lang="hr" data-lang-id="hr" title="Croatian">Hrvatski (hr)</a></li>
+                <li><a href="#" lang="pt" data-lang-id="pt" title="Portuguese">Português (pt)</a></li>
+                <li><a href="#" lang="te" data-lang-id="te" title="Telugu">తెలుగు (te)</a></li>
+                <li><a href="#" lang="uk" data-lang-id="uk" title="Ukrainian">Українська (uk)</a></li>
+                <li><a href="#" lang="zh" data-lang-id="zh" title="Chinese">中文 (zh)</a></li>
+              </ul>
+
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header id="header-bar" class="header-bar">
+
+
+
+    <div class="logo-component">
+      <a href="index.html" title="The Internet Archive&#39;s Open Library: One page for every book">
+        <div class="logo-txt">
+          <img class="logo-icon" src="static/images/openlibrary-logo-tighter.svg" width="189" height="47"
+            alt="Open Library logo" />
+        </div>
+      </a>
+    </div>
+
+
+    <ul class="navigation-component">
+      <li>
+        <div class="mybooks-component header-dropdown">
+          <a href="/account/books" data-ol-link-track=MainNav|MyBooks>My Books</a>
+        </div>
+      </li>
+      <li>
+        <div class="browse-component header-dropdown">
+          <details>
+            <summary>
+              Browse
+              <span class="shift">Menu</span>
+              <img class="down-arrow" aria-hidden="true" src="static/images/down-arrow.png" alt="" role="presentation"
+                width="7" height="4">
+            </summary>
+
+            <div class="browse-dropdown-component navigation-dropdown-component">
+
+              <ul class="dropdown-menu browse-dropdown-menu">
+                <li>
+                  <a href="/subjects" data-ol-link-track=MainNav|Subjects>Subjects</a>
+                </li>
+                <li>
+                  <a href="/trending" data-ol-link-track=MainNav|Trending>Trending</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </details>
+        </div>
+      </li>
+    </ul>
+
+    <div class="search-component">
+      <div class="search-bar-component">
+        <div class="search-bar">
+          <div class="search-facet">
+            <label class="search-facet-selector">
+              <span aria-hidden="true" class="search-facet-value">All</span>
+              <select aria-label="Search by">
+                <option value='all'>All</option>
+                <option value='title'>Title</option>
+                <option value='author'>Author</option>
+                <option value='text'>Text</option>
+                <option value='subject'>Subject</option>
+                <option value='lists'>Lists</option>
+                <option value='advanced'>Advanced</option>
+              </select>
+            </label>
+          </div>
+          <form class="search-bar-input" action="/search" method="get">
+            <input type="text" name="q" placeholder="Search" aria-label="Search" autocomplete="off">
+            <input name="mode" type="checkbox" aria-hidden="true" aria-label="Search checkbox" checked="checked"
+              value="" id="ftokenstop" class="hidden instantsearch-mode">
+            <input type="submit" value="" class="search-bar-submit" aria-label="Search submit">
+            <div class="vertical-separator"></div>
+          </form>
+        </div>
+        <div class="search-dropdown">
+          <ul class="search-results">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <ul class="auth-component">
+      <li class="hide-me">
+        <a class="btn" href="login.html">Log In</a>
+      </li>
+      <li><a class="btn primary" href="create.html">Sign Up</a></li>
+    </ul>
+
+    <div class="hamburger-component header-dropdown">
+      <details id="my-details">
+        <summary data-ol-link-track="HeaderBar|Hamburger">
+          <img class="hamburger__icon" src="static/images/hamburger-icon.svg" alt="additional options menu" />
+          <img class="down-arrow" aria-hidden="true" src="static/images/down-arrow.png" alt="" role="presentation"
+            width="7" height="4">
+        </summary>
+
+        <div class="app-drawer">
+          <ul class="dropdown-menu hamburger-dropdown-menu">
+            <li class="subsection">My Open Library</li>
+            <li class="login-links">
+              <a class="login-links__secondary" href="login.html">Log In</a>
+              <a class="login-links__primary" href="create.html">Sign Up</a>
+
+
+            </li>
+
+            <li class="subsection">Browse</li>
+
+            <li> <a href="/subjects" data-ol-link-track=Hamburger|Subjects>Subjects</a></li>
+            <li><a href="/trending" data-ol-link-track=Hamburger|Trending>Trending</a></li>
+            <li><a href="/explore" data-ol-link-track=Hamburger|Explore>Library Explorer</a></li>
+
+            <li class="subsection">Contribute</li>
+
+            <li><a href="/books/add" data-ol-link-track=Hamburger|AddBook>Add a Book</a></li>
+            <li><a href="/recentchanges" data-ol-link-track=Hamburger|RecentEdits>Recent Community Edits</a></li>
+
+            <li class="subsection">Resources</li>
+
+            <li><a href="/help" data-ol-link-track=Hamburger|Help> Help &amp; Support</a></li>
+
+          </ul>
+        </div>
+      </details>
+
+
+      <button onclick="closeMyDetails()"></button>
+      <script>
+        function openMyDetails() {
+          var myDetails = document.getElementById("my-details");
+          myDetails.setAttribute("open", "true");
+        }
+      </script>
+      <script>
+        function closeMyDetails() {
+          var myDetails = document.getElementById("my-details");
+          myDetails.removeAttribute("open");
+        }
+      </script>
+
+    </div>
+
+  </header>
+
+
+
+
+  <header class="header-bar mobile">
+    <ul class="navigation-component mobile">
+      <li>
+        <div class="mybooks-component header-dropdown">
+          <a href="/account/books" data-ol-link-track=MainNav|MyBooks>My Books</a>
+        </div>
+
+      </li>
+
+      <li>
+        <div class="browse-component header-dropdown">
+          <details>
+            <summary>
+              Browse
+              <span class="shift">Menu</span>
+              <img class="down-arrow" aria-hidden="true" src="static/images/down-arrow.png" alt="" role="presentation"
+                width="7" height="4">
+            </summary>
+            <div class="browse-dropdown-component navigation-dropdown-component">
+
+              <ul class="dropdown-menu browse-dropdown-menu">
+                <li>
+                  <a href="/subjects" data-ol-link-track=MainNav|Subjects>Subjects</a>
+                </li>
+                <li>
+                  <a href="/trending" data-ol-link-track=MainNav|Trending>Trending</a>
+                </li>
+
+      </li>
+    </ul>
+    </div>
+    </details>
+    </div>
+    </li>
+
+    </ul>
+  </header>
+
+
+  <div id="test-body-mobile">
+
+    <div class="flash-messages"> </div>
+
+    <div id="contentBody">
+
+      <div class="carousel-section">
+        <div class="carousel-section-header">
+          <h2 class="home-h2">DMM</h2>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel carousel--progressively-enhanced slick-initialized slick-slider" id="welcome_carousel"
+            data-config="[&quot;#welcome_carousel&quot;, 3, 2, 2, 1, 1]">
+            <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button"
+              aria-disabled="true" style>Previous</button>
+
+
+            <div aria-live="polite" class="slick-list draggable">
+              <div class="slick-track" style="opacity: 1; width: 2682px; transform: translate3d(0px, 0px, 0px);"
+                role="listbox">
+
+                <div class="carousel__item tutorial__item slick-slide" style="width: 292px;" tabindex="-1" role="option"
+                  aria-describedby="slick-slide00" id="slick-slide00" data-slick-index="0" aria-hidden="true">
+                  <a href="/help/faq/borrow" tabindex="-1" data-ol-link-track="OnboardingCarouselClick|Read">
+                    <img src="static/images/onboarding/read.png">
+                    <div class="card__text">
+                      <p>Read Free Library Books Online</p>
+                      <p class="small">Millions of books available through Controlled Digital Lending</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="carousel__item tutorial__item show-modal slick-slide" style="width: 292px;" tabindex="-1"
+                  role="option" aria-describedby="slick-slide01" id="slick-slide01" data-slick-index="1"
+                  aria-hidden="true">
+                  <a href="/help/faq/reading-log" tabindex="-1" data-ol-link-track="OnboardingCarouselClick|Organize">
+                    <img src="static/images/onboarding/track.png">
+                    <div class="card__text">
+                      <p>Keep Track of your Favorite Books</p>
+                      <p class="small">Organize your Books using Lists &amp; the Reading Log</p>
+                    </div>
+                  </a>
+                </div>>
+
+                <div class="carousel__item tutorial__item slick-slide" style="width: 292px;" tabindex="-1" role="option"
+                  aria-describedby="slick-slide02" id="slick-slide02" data-slick-index="2" aria-hidden="true">
+                  <a href="/explore" tabindex="-1" data-ol-link-track="OnboardingCarouselClick|Explore">
+                    <img src="static/images/onboarding/library_explorer.png">
+                    <div class="card__text">
+                      <p>Try the virtual Library Explorer</p>
+                      <p class="small">Digital shelves organized like a physical library</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="carousel__item tutorial__item slick-slide slick-current slick-active" style="width: 292px;"
+                  tabindex="-1" role="option" aria-describedby="slick-slide03" id="slick-slide03" data-slick-index="3"
+                  aria-hidden="false">
+                  <a href="/search/inside" tabindex="0" data-ol-link-track="OnboardingCarouselClick|FulltextSearch">
+                    <img src="static/images/onboarding/fulltext.png">
+                    <div class="card__text">
+                      <p>Try Fulltext Search</p>
+                      <p class="small">Find matching results within the text of millions of books</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="carousel__item tutorial__item slick-slide" style="width: 446px;" tabindex="-1" role="option"
+                  aria-describedby="slick-slide04" id="slick-slide04" data-slick-index="4" aria-hidden="true">
+                  <a href="/librarians" tabindex="-1" data-ol-link-track="OnboardingCarouselClick|Librarians">
+                    <img src="static/images/onboarding/librarian.png">
+                    <div class="card__text">
+                      <p>Be an Open Librarian</p>
+                      <p class="small">Dozens of ways you can help improve the library</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="carousel__item tutorial__item slick-slide" style="width: 292px;" tabindex="-1" role="option"
+                  aria-describedby="slick-slide05" id="slick-slide05" data-slick-index="5" aria-hidden="true">
+                  <a href="https://forms.gle/enM9rGoPBGB89kd4A" tabindex="-1"
+                    data-ol-link-track="OnboardingCarouselClick|Feedback">
+                    <img attribution="Reading by Chattapat from the Noun Project"
+                      src="static/images/onboarding/feedback.png">
+                    <div class="card__text">
+                      <p>Send us feedback</p>
+                      <p class="small">Your feedback will help us improve these cards</p>
+                    </div>
+                  </a>
+                </div>
+
+
+                <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"
+                  aria-disabled="false" style>Next</button>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div id="home-stats">
+          <div class="head">
+            <h2 class="inline">Around the Library</h2>
+            <p class="inline sansserif large collapse">&nbsp;Here's what's happened over the last 28 days. More <a
+                href="/recentchanges">recent changes</a>.</p>
+          </div>
+
+          <div id="home-stats-charts">
+            <div class="statschart">
+              <div class="chartShow" onclick="window.location.href='//archive.org/stats';"
+                title="See all visitors to OpenLibrary.org">
+                <div id="visitors-graph" style="width:150px;height:60px;" title="Area graph of recent unique visitors">
+                </div>
+                <a href="//archive.org/stats" title="See all visitors to OpenLibrary.org"><span
+                    class="ticks">284.636</span><span class="label">Unique Visitors</span></a>
+              </div>
+            </div>
+
+            <div class="statschart">
+              <div class="chartShow" onclick="window.location.href='/stats';"
+                title="How many new Open Library members have we welcomed?">
+                <div id="members-graph" style="width:150px;height:60px;" title="Area graph of new members"></div>
+                <a href="/stats" title="How many new Open Library members have we welcomed?"><span
+                    class="ticks">197.605</span><span class="label">New Members</span></a>
+              </div>
+            </div>
+            <div class="statschart">
+              <div class="chartShow" onclick="window.location.href='/recentchanges';"
+                title="People are constantly updating the catalog">
+                <div id="edits-graph" style="width:150px;height:60px;" title="Area graph of recent catalog edits"></div>
+                <a href="/recentchanges" title="People are constantly updating the catalog"><span
+                    class="ticks">456.476</span><span class="label">Catalog Edits</span></a>
+              </div>
+            </div>
+
+            <div class="statschart">
+              <div class="chartShow" onclick="window.location.href='/lists';" title="Members can create Lists">
+                <div id="lists-graph" style="width:150px;height:60px;" title="Area graph of lists created recently">
+                </div>
+                <a href="/lists" title="Members can create Lists"><span class="ticks">1.276</span><span
+                    class="label">Lists Created</span></a>
+              </div>
+            </div>
+
+            <div class="statschart">
+              <div class="chartShow" onclick="window.location.href='/stats';"
+                title="We&#39;re a library, so we lend books, too">
+                <div id="ebooks-graph" style="width:150px;height:60px;" title="Area graph of ebooks borrowed recently">
+                </div>
+                <a href="/borrow" title="We&#39;re a library, so we lend books, too"><span
+                    class="ticks">433.389</span><span class="label">eBooks Borrowed</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/json+graph"
+          id="graph-json-visitors-graph">[[1678320000000, 149415], [1678406400000, 133983], [1678492800000, 371], [1678579200000, 99], [1678665600000, 87], [1678752000000, 96], [1678838400000, 72], [1678924800000, 65], [1679011200000, 52], [1679097600000, 30], [1679184000000, 21], [1679270400000, 20], [1679356800000, 32], [1679443200000, 15], [1679529600000, 48], [1679616000000, 20], [1679702400000, 20], [1679788800000, 8], [1679875200000, 15], [1679961600000, 21], [1680048000000, 22], [1680134400000, 19], [1680220800000, 26], [1680307200000, 25], [1680393600000, 9], [1680480000000, 9], [1680566400000, 18], [1680652800000, 18]]</script>
+        <script type="text/json+graph"
+          id="graph-json-members-graph">[[1678320000000, 8763], [1678406400000, 8253], [1678492800000, 6844], [1678579200000, 7593], [1678665600000, 8503], [1678752000000, 8542], [1678838400000, 7479], [1678924800000, 8398], [1679011200000, 7796], [1679097600000, 6611], [1679184000000, 7265], [1679270400000, 8649], [1679356800000, 8837], [1679443200000, 7355], [1679529600000, 7522], [1679616000000, 7511], [1679702400000, 6901], [1679788800000, 7497], [1679875200000, 8544], [1679961600000, 8496], [1680048000000, 6853], [1680134400000, 6559], [1680220800000, 5250], [1680307200000, 3917], [1680393600000, 4419], [1680480000000, 5363], [1680566400000, 6085], [1680652800000, 1800]]</script>
+        <script type="text/json+graph"
+          id="graph-json-edits-graph">[[1678320000000, 19151], [1678406400000, 18684], [1678492800000, 15412], [1678579200000, 17447], [1678665600000, 19234], [1678752000000, 19118], [1678838400000, 16978], [1678924800000, 18913], [1679011200000, 17456], [1679097600000, 15095], [1679184000000, 16402], [1679270400000, 19502], [1679356800000, 19382], [1679443200000, 16824], [1679529600000, 17055], [1679616000000, 17145], [1679702400000, 16362], [1679788800000, 17592], [1679875200000, 19130], [1679961600000, 18846], [1680048000000, 15977], [1680134400000, 15133], [1680220800000, 12405], [1680307200000, 9741], [1680393600000, 11249], [1680480000000, 14809], [1680566400000, 17260], [1680652800000, 4174]]</script>
+        <script type="text/json+graph"
+          id="graph-json-lists-graph">[[1678320000000, 57], [1678406400000, 53], [1678492800000, 54], [1678579200000, 34], [1678665600000, 53], [1678752000000, 64], [1678838400000, 44], [1678924800000, 44], [1679011200000, 49], [1679097600000, 38], [1679184000000, 43], [1679270400000, 44], [1679356800000, 59], [1679443200000, 56], [1679529600000, 46], [1679616000000, 64], [1679702400000, 48], [1679788800000, 38], [1679875200000, 45], [1679961600000, 59], [1680048000000, 42], [1680134400000, 48], [1680220800000, 33], [1680307200000, 23], [1680393600000, 40], [1680480000000, 33], [1680566400000, 48], [1680652800000, 17]]</script>
+        <script type="text/json+graph"
+          id="graph-json-ebooks-graph">[[1678264380000, 17610.0], [1678350780000, 17436.0], [1678437180000, 18762.0], [1678523580000, 14855.0], [1678609980000, 16290.0], [1678696380000, 17805.0], [1678782780000, 16813.0], [1678869180000, 15400.0], [1678955580000, 15732.0], [1679041980000, 14392.0], [1679128380000, 14664.0], [1679214780000, 16683.0], [1679301180000, 18560.0], [1679387580000, 16496.0], [1679473980000, 17279.0], [1679560380000, 16659.0], [1679646780000, 15749.0], [1679733180000, 15026.0], [1679819580000, 16183.0], [1679905980000, 17625.0], [1679992380000, 16247.0], [1680078780000, 13159.0], [1680165180000, 12184.0], [1680251580000, 11754.0], [1680337980000, 11471.0], [1680424380000, 11816.0], [1680510780000, 13730.0], [1680597180000, 13009.0]]</script>
+
+
+
+        <div id="home-resources">
+          <div class="head">
+            <h2>About the Project</h2>
+          </div>
+
+          <div id="home-about">
+            <div id="home-about-mission">
+              <h3 id="home-about-mission-tldr">
+                Open Library is an open, editable library catalog, building towards a web page for every book ever
+                published.
+                <a href="/about" class="small sansserif">More</a>
+              </h3>
+              <p id="home-about-mission-desc">
+                Just like Wikipedia, you can contribute new information or corrections to the catalog. You can browse by
+                <a href="/subjects">subjects</a>, <a href="/authors">authors</a> or <a href="/lists">lists</a> members
+                have created. If you love books, why not help build a library?
+              </p>
+            </div>
+            <div class="home-resource-section">
+              <h3 class="collapse"><a href="https://blog.openlibrary.org/" class="header">Latest Blog Posts</a></h3>
+              <ul id="olBlog">
+                <li><a
+                    href="https://blog.openlibrary.org/2023/03/10/book-talks-watch-virtual-talks-by-trailblazing-authors/">Book
+                    Talks: Watch Virtual Talks by Trailblazing Authors</a> - <em>10 tháng 3, 2023</em></li>
+                <li><a
+                    href="https://blog.openlibrary.org/2022/12/31/reach-your-2023-reading-goals-with-open-library/">Reach
+                    Your 2023 Reading Goals with Open Library</a> - <em>31 tháng 12, 2022</em></li>
+                <li><a href="https://blog.openlibrary.org/2022/12/27/a-brand-new-my-books-experience/">A Brand New My
+                    Books Experience</a> - <em>27 tháng 12, 2022</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!--For analytics-->
+  <div class="clearfix"></div>
+
+
+  <footer>
+    <div id="footer-content">
+      <div id="footer-links">
+        <div>
+          <h2>Open Library</h2>
+          <ul>
+            <li><a href="/about/vision">Vision</a></li>
+            <li><a href="/volunteer">Volunteer</a></li>
+            <li><a href="/partner-with-us">Partner With Us</a></li>
+            <li><a href="https://archive.org/about/jobs.php" title="Jobs">Careers</a></li>
+            <li><a href="https://blog.openlibrary.org/">Blog</a></li>
+            <li><a href="https://archive.org/about/terms.php">Terms of Service</a></li>
+            <li><a href="https://archive.org/donate/?platform=ol&origin=olwww-TopNavDonateButton">Donate</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Discover</h2>
+          <ul>
+            <li><a href="/" title="Go home">Home</a></li>
+            <li><a href="/search" title="Explore Books">Books</a></li>
+            <li><a href="/search/authors" title="Explore authors">Authors</a></li>
+            <li><a href="/subjects" title="Explore subjects">Subjects</a></li>
+            <li><a href="/collections" title="Explore collections">Collections</a></li>
+            <li><a href="/advancedsearch">Advanced Search</a></li>
+            <li><a href="#top" title="Navigate to top of this page">Return to Top</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Develop</h2>
+          <ul>
+            <li><a href="/developers" title="Explore Open Library Developer Center">Developer Center</a></li>
+            <li><a href="/developers/api" title="Explore Open Library APIs">API Documentation</a></li>
+            <li><a href="/developers/dumps" title="Bulk Open Library data">Bulk Data Dumps</a></li>
+            <li><a href="https://github.com/internetarchive/openlibrary/wiki/Writing-Bots" title="Write a bot">Writing
+                Bots</a></li>
+            <li><a href="/books/add" title="Add a new book to Open Library">Add a Book</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Help</h2>
+          <ul>
+            <li><a href="/help">Help Center</a></li>
+            <li><a href="/contact?path=%2F" title="Problems">Report A Problem</a></li>
+            <li><a href="/help/faq/editing" title="Suggest Edits">Suggesting Edits</a></li>
+          </ul>
+          <aside id="footer-icons">
+            <a class="footer-icons__twitter" href="https://twitter.com/OpenLibrary">twitter</a>
+            <a class="footer-icons__github" href="https://github.com/internetarchive/openlibrary">github</a>
+          </aside>
+        </div>
+        <div id="footer-locale-menu">
+          <h2>Change Website Language</h2>
+
+          <ul class="locale-options ">
+            <li><a href="#" lang="cs" data-lang-id="cs" title="Czech">Čeština (cs)</a></li>
+            <li><a href="#" lang="de" data-lang-id="de" title="German">Deutsch (de)</a></li>
+            <li><a href="#" lang="en" data-lang-id="en" title="English">English (en)</a></li>
+            <li><a href="#" lang="es" data-lang-id="es" title="Spanish">Español (es)</a></li>
+            <li><a href="#" lang="fr" data-lang-id="fr" title="French">Français (fr)</a></li>
+            <li><a href="#" lang="hr" data-lang-id="hr" title="Croatian">Hrvatski (hr)</a></li>
+            <li><a href="#" lang="pt" data-lang-id="pt" title="Portuguese">Português (pt)</a></li>
+            <li><a href="#" lang="te" data-lang-id="te" title="Telugu">తెలుగు (te)</a></li>
+            <li><a href="#" lang="uk" data-lang-id="uk" title="Ukrainian">Українська (uk)</a></li>
+            <li><a href="#" lang="zh" data-lang-id="zh" title="Chinese">中文 (zh)</a></li>
+          </ul>
+
+        </div>
+      </div>
+      <hr>
+      <div id="footer-details">
+        <img id="archive-logo" src="static/images/pantheon.png" alt="Open Library logo">
+        <div id="legal-details">
+          <span>Open Library is an initiative of the <a href="//archive.org/">Internet Archive</a>, a 501(c)(3)
+            non-profit, building a digital library of Internet sites and other cultural artifacts in digital form. Other
+            <a href="//archive.org/projects/">projects</a> include the <a href="//archive.org/web/">Wayback Machine</a>,
+            <a href="//archive.org/">archive.org</a> and <a href="//archive-it.org">archive-it.org</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
